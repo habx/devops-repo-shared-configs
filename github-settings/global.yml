@@ -21,13 +21,13 @@ labels:
     color: ff66cc
     oldname: habx-automerge
   - name: autorelease-major
-    description: Automatically create a MAJOR release after merge
+    description: Automatically create a major release after merge
     color: ff66cc
   - name: dependencies
-    description: Update created by dependencies
+    description: This PR updates dependencies
     color: 0366d6
   - name: security
-    description: Pull request related to security
+    description: This PR relates to security
     color: ee0701
 
 branches:
