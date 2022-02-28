@@ -27,7 +27,7 @@ labels:
     description: This PR updates dependencies
     color: 0366d6
   - name: security
-    description: This PR relates to security
+    description: This PR relates to security 🔒
     color: ee0701
 
 branches:
