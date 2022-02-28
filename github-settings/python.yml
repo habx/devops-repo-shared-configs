@@ -1,0 +1,13 @@
+_extends: devops-repo-shared-configs/github-settings/global.yml
+
+branches:
+  - name: dev
+    protection:
+      required_status_checks:
+        strict: true
+        contexts: ["tests", "codecov/project", "codecov/patch"]
+  - name: release/*
+    protection:
+      required_status_checks:
+        strict: true
+        contexts: ["tests", "codecov/project", "codecov/patch"]
