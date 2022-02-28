@@ -1,4 +1,4 @@
-_extends: devops-repo-shared-configs/github-settings/global.yml
+_extends: devops-repo-shared-configs:github-settings/global.yml
 
 branches:
   - name: dev
