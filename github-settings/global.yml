@@ -4,6 +4,7 @@ repository:
   has_issues: true
   has_wiki: false
   has_projects: false
+  default_branch: dev
 labels:
   - name: automerge
     description: Automatically merge this PR
