@@ -6,7 +6,3 @@ branches:
     protection:
       required_status_checks:
         contexts: ["tests", "static-tests", "codecov/project", "codecov/patch"]
-  - name: release/*
-    protection:
-      required_status_checks:
-        contexts: ["tests", "static-test", "codecov/project", "codecov/patch"]
