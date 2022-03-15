@@ -21,6 +21,9 @@ labels:
     description: Automatically create a release after merge
     color: ff66cc
     oldname: habx-automerge
+  - name: autorelease-group
+    description: Automatically create a release after the last label has been merged
+    color: ff66cc
   - name: autorelease-major
     description: Automatically create a major release after merge
     color: ff66cc
