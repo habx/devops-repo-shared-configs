@@ -5,4 +5,4 @@ branches:
   - name: dev
     protection:
       required_status_checks:
-        contexts: ["deploy-to-dev"]
+        contexts: ["tests", "codecov/project", "codecov/patch"]
