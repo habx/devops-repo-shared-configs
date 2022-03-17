@@ -108,6 +108,22 @@
                 "automerge-noupdate",
                 "dependencies"
             ]
+        },
+        {
+            "description": "We don't need to update AWS SDK very often",
+            "matchPackageNames": [
+                "aws-sdk"
+            ],
+            "schedule": [
+                "monthly"
+            ]
+        },
+        {
+            "description": "GraphQL should stay below v16",
+            "matchPackageNames": [
+                "graphql"
+            ],
+            "allowedVersions": "<16"
         }
     ]
 }

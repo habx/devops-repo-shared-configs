@@ -1,0 +1,15 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "github>habx/devops-repo-shared-configs//renovate/global"
+    ],
+    "enabledManagers": [
+        "renovate"
+    ],
+    "schedule": [
+        "at any time"
+    ],
+    "labels": [
+        "autorelease-group"
+    ]
+}

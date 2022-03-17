@@ -3,7 +3,7 @@
   "extends": [
     "github>habx/devops-repo-shared-configs//renovate/global",
     "github>habx/devops-repo-shared-configs//renovate/ts-package-rules",
-    "github>habx/devops-repo-shared-configs//renovate/npmrc"
+    "github>habx/devops-repo-shared-configs//renovate/ts-npmrc"
   ],
   "ignoreDeps": ["husky", "vite-plugin-checker"],
   "packageRules": [

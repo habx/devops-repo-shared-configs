@@ -3,6 +3,9 @@
     "extends": [
         "config:base"
     ],
+    "enabledManagers": [
+        "renovate"
+    ],
     "masterIssue": true,
     "rangeStrategy": "bump",
     "separateMinorPatch": true,
@@ -10,19 +13,19 @@
     "prHourlyLimit": 10,
     "timezone": "Europe/Paris",
     "schedule": [
-      "before 6:00am on Monday"
+        "before 6:00am on Monday"
     ],
     "vulnerabilityAlerts": {
-      "labels": [
-        "security",
-        "dependencies"
-      ],
-      "schedule": [
-        "at any time"
-      ],
-      "prPriority": 10
+        "labels": [
+            "security",
+            "dependencies"
+        ],
+        "schedule": [
+            "at any time"
+        ],
+        "prPriority": 10
     },
     "labels": [
-      "dependencies"
+        "dependencies"
     ]
 }

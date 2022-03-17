@@ -3,7 +3,8 @@
   "extends": [
     "github>habx/devops-repo-shared-configs//renovate/global",
     "github>habx/devops-repo-shared-configs//renovate/ts-package-rules"{% if public != "true" %},
-    "github>habx/devops-repo-shared-configs//renovate/npmrc"{% endif %}
+    "github>habx/devops-repo-shared-configs//renovate/ts-npmrc"{% endif %}{% if client != "true" %},
+    "github>habx/devops-repo-shared-configs//renovate/ts-non-esm"{% endif %}
   ],
   "ignoreDeps": ["husky"{% if client == "true" and lib != "true" %}, "vite-plugin-checker"{% endif %}],
   "packageRules": [{% if client == "true" and lib != "true" %}
