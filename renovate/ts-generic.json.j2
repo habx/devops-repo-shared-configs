@@ -1,0 +1,47 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>habx/devops-repo-shared-configs//renovate/global",
+    "github>habx/devops-repo-shared-configs//renovate/ts-package-rules"{% if public != "true" %},
+    "github>habx/devops-repo-shared-configs//renovate/npmrc"{% endif %}
+  ],
+  "ignoreDeps": ["husky"{% if client == "true" and lib != "true" %}, "vite-plugin-checker"{% endif %}],
+  "packageRules": [{% if client == "true" and lib != "true" %}
+    {
+        "matchPackageNames": [
+            "cypress"
+        ],
+        "allowedVersions": "<9.1"
+    },{% endif %}
+    {
+      "updateTypes": [{% if client != "true" and lib != "true" %}
+        "major",{% endif %}
+        "minor",
+        "patch"
+      ],
+      "depTypeList": [
+        "devDependencies"
+      ],
+      "automerge": true,
+      "labels": [
+        "automerge-noupdate",
+        "dependencies"
+      ]
+    },
+    {
+      "updateTypes": [{% if client != "true" %}
+        "minor",{% endif %}
+        "patch"
+      ],
+      "depTypeList": [
+        "dependencies",
+        "peerDependencies"
+      ],
+      "automerge": true,
+      "labels": [
+        "automerge-noupdate",
+        "dependencies"
+      ]
+    }
+  ]
+}

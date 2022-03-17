@@ -1,0 +1,108 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "enabledManagers": [
+        "npm",
+        "renovate"
+    ],
+    "packageRules": [
+        {
+            "packagePatterns": [
+                "^@habx/"
+            ],
+            "schedule": [
+                "at any time"
+            ],
+            "prPriority": 5
+        },
+        {
+            "packagePatterns": [
+                "^@habx/"
+            ],
+            "updateTypes": [
+                "minor",
+                "patch"
+            ],
+            "automerge": true,
+            "labels": [
+                "automerge-noupdate",
+                "dependencies"
+            ]
+        },
+        {
+            "packageNames": [
+                "@habx/lib-client-housing-2d",
+                "@habx/lib-housing-mosaic"
+            ],
+            "groupName": "mosaic changes"
+        },
+        {
+            "packageNames": [
+                "typescript",
+                "typedoc"
+            ],
+            "groupName": "typescript changes"
+        },
+        {
+            "packageNames": [
+                "@habx/lib-client-housing-3d",
+                "@habx/lib-housing-3d-scene",
+                "three",
+                "@types/three"
+            ],
+            "groupName": "3d changes"
+        },
+        {
+            "packageNames": [
+                "ts-jest",
+                "jest",
+                "@types/jest"
+            ],
+            "groupName": "jest changes"
+        },
+        {
+            "packageNames": [
+                "knex",
+                "lodash",
+                "typescript",
+                "lint-staged"
+            ],
+            "updateTypes": [
+                "major",
+                "minor",
+                "patch"
+            ],
+            "automerge": true,
+            "prPriority": -5,
+            "labels": [
+                "automerge-noupdate",
+                "dependencies"
+            ]
+        },
+        {
+            "packageNames": [
+                "three",
+                "@types/three",
+                "react-scripts"
+            ],
+            "automerge": false,
+            "stabilityDays": 7,
+            "labels": []
+        },
+        {
+            "packagePatterns": [
+                "^@sentry/",
+                "^@types/"
+            ],
+            "updateTypes": [
+                "minor",
+                "patch"
+            ],
+            "automerge": true,
+            "prPriority": -10,
+            "labels": [
+                "automerge-noupdate",
+                "dependencies"
+            ]
+        }
+    ]
+}
