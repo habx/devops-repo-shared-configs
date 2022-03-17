@@ -4,6 +4,11 @@
         "npm",
         "renovate"
     ],
+    "constraints": {
+        "node": {
+            "version": "<17"
+        }
+    },
     "packageRules": [
         {
             "packagePatterns": [
