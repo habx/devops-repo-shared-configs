@@ -54,3 +54,6 @@ workflows:
   tests:
     jobs:
       - tests
+  update-version:
+    jobs:
+      - update-version
