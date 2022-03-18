@@ -28,4 +28,4 @@ for file_name in glob.glob("renovate/*.json"):
             j["extends"][k] = f"github>habx/devops-repo-shared-configs//{m.group(1)}#{version}"
 
     logging.info("Writing file: %s", file_name)
-    json.write(file, j)
+    file.write_text(json.dumps(j, indent=4))
