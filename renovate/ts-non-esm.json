@@ -33,6 +33,10 @@
                 "@sindresorhus/string-hash"
             ],
             "allowedVersions": "<2"
+        },
+        {
+            "matchPackageNames": [ "node-fetch" ],
+            "allowedVersions": "<3"
         }
     ]
 }
