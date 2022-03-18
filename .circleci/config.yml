@@ -56,6 +56,6 @@ workflows:
     jobs:
       - tests
       - orb-tools/lint
-  update-version:
-    jobs:
-      - update-version
+  #update-version:
+  #  jobs:
+  #    - update-version
