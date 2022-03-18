@@ -1,9 +1,9 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
-        "github>habx/devops-repo-shared-configs//renovate/global#v0.1.0",
-        "github>habx/devops-repo-shared-configs//renovate/ts-package-rules#v0.1.0",
-        "github>habx/devops-repo-shared-configs//renovate/ts-npmrc#v0.1.0"
+        "github>habx/devops-repo-shared-configs//renovate/global#v0.2.0",
+        "github>habx/devops-repo-shared-configs//renovate/ts-package-rules#v0.2.0",
+        "github>habx/devops-repo-shared-configs//renovate/ts-npmrc#v0.2.0"
     ],
     "ignoreDeps": [
         "husky"
