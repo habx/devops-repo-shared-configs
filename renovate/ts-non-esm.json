@@ -21,6 +21,12 @@
                 "got"
             ],
             "allowedVersions": "<12"
+        },
+        {
+            "matchPackageNames": [
+                "@sindresorhus/string-hash"
+            ],
+            "allowedVersions": "<2"
         }
     ]
 }
