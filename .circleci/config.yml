@@ -36,7 +36,7 @@ jobs:
       - run: git status
       - run: git config --global user.name "CircleCI Bot"
       - run: git config --global user.email tech@habx.fr
-      #- run: git pull -v
+      - run: git pull -v
       - run: renovate/update_version.py
       # - run: git diff
       - run: | # [[ `git status --porcelain` ]] && 
