@@ -32,7 +32,7 @@ jobs:
     steps:
       - checkout
       - add_ssh_keys
-      - run: git pull -v
+      #- run: git pull -v
       - run: git status
       - run: git config --global user.name "CircleCI Bot"
       - run: git config --global user.email tech@habx.fr
@@ -40,9 +40,11 @@ jobs:
       - run: renovate/update_version.py
       # - run: git diff
       - run: | # [[ `git status --porcelain` ]] && 
+            set -x
+            git status --porcelain
             git add renovate/*.json
             git commit -m "[SKIP CI] version sync"
-            git push -v
+            git push -v --set-upstream origin ${CIRCLE_BRANCH}
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
