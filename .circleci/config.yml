@@ -26,6 +26,27 @@ jobs:
               echo "Validating $file"
               json validate --document-file=${file} --schema-file=.schema.json
             done
+    tool-3d-files-conversion-prod:
+
+  update-version:
+    docker:
+      - image: cimg/base:2022.03
+    steps:
+      - checkout
+      - add_ssh_keys
+      - run: git pull -v
+      - run: git status
+      - run: git config --global user.name "CircleCI Bot"
+      - run: git config --global user.email tech@habx.fr
+      - run: git pull -v
+      - run: renovate/update_version.py
+      - run: git diff
+      - run: |
+          if [[ `git status --porcelain` ]] && [[ "${CIRCLE_BRANCH}" = "dev" ]]; then 
+            git add .
+            git commit -m "[SKIP CI] version sync"
+            # git push
+          fi
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
