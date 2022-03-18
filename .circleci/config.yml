@@ -17,6 +17,7 @@ jobs:
       - run:
           name: "lint renovate"
           command: |
+            sudo apt-get update
             sudo apt-get install curl jq python3-pip -y
             cd renovate
             curl $(jq -r '."$schema"' global.json) -o .schema.json
