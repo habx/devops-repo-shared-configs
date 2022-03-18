@@ -8,5 +8,8 @@
             ".circleci/config.yml",
             "src/@orb.yml"
         ]
-    }
+    },
+    "schedule": [
+        "at any time"
+    ]
 }
