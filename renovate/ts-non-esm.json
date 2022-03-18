@@ -14,6 +14,13 @@
                 "p-map"
             ],
             "allowedVersions": "<5"
+        },
+        {
+            "description": "ttps://github.com/sindresorhus/got",
+            "matchPackageNames": [
+                "got"
+            ],
+            "allowedVersions": "<12"
         }
     ]
 }
