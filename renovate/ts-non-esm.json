@@ -16,6 +16,12 @@
             "allowedVersions": "<5"
         },
         {
+            "matchPackageNames": [
+                "p-reduce"
+            ],
+            "allowedVersions": "<3"
+        },
+        {
             "description": "ttps://github.com/sindresorhus/got",
             "matchPackageNames": [
                 "got"
