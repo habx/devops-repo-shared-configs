@@ -1,45 +1,48 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "github>habx/devops-repo-shared-configs//renovate/global",
-    "github>habx/devops-repo-shared-configs//renovate/ts-package-rules",
-    "github>habx/devops-repo-shared-configs//renovate/ts-npmrc"
-  ],
-  "ignoreDeps": ["husky", "vite-plugin-checker"],
-  "packageRules": [
-    {
-        "matchPackageNames": [
-            "cypress"
-        ],
-        "allowedVersions": "<9.1"
-    },
-    {
-      "updateTypes": [
-        "minor",
-        "patch"
-      ],
-      "depTypeList": [
-        "devDependencies"
-      ],
-      "automerge": true,
-      "labels": [
-        "automerge-noupdate",
-        "dependencies"
-      ]
-    },
-    {
-      "updateTypes": [
-        "patch"
-      ],
-      "depTypeList": [
-        "dependencies",
-        "peerDependencies"
-      ],
-      "automerge": true,
-      "labels": [
-        "automerge-noupdate",
-        "dependencies"
-      ]
-    }
-  ]
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "github>habx/devops-repo-shared-configs//renovate/global#0.1.0",
+        "github>habx/devops-repo-shared-configs//renovate/ts-package-rules#0.1.0",
+        "github>habx/devops-repo-shared-configs//renovate/ts-npmrc#0.1.0"
+    ],
+    "ignoreDeps": [
+        "husky",
+        "vite-plugin-checker"
+    ],
+    "packageRules": [
+        {
+            "matchPackageNames": [
+                "cypress"
+            ],
+            "allowedVersions": "<9.1"
+        },
+        {
+            "updateTypes": [
+                "minor",
+                "patch"
+            ],
+            "depTypeList": [
+                "devDependencies"
+            ],
+            "automerge": true,
+            "labels": [
+                "automerge-noupdate",
+                "dependencies"
+            ]
+        },
+        {
+            "updateTypes": [
+                "patch"
+            ],
+            "depTypeList": [
+                "dependencies",
+                "peerDependencies"
+            ],
+            "automerge": true,
+            "labels": [
+                "automerge-noupdate",
+                "dependencies"
+            ]
+        }
+    ]
 }
