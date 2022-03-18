@@ -3,10 +3,6 @@
     "extends": [
         "github>habx/devops-repo-shared-configs//renovate/global"
     ],
-    "enabledManagers": [
-        "renovate",
-        "circleci"
-    ],
     "schedule": [
         "at any time"
     ],

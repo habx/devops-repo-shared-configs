@@ -4,7 +4,8 @@
         "config:base"
     ],
     "enabledManagers": [
-        "renovate"
+        "renovate",
+        "circleci"
     ],
     "masterIssue": true,
     "rangeStrategy": "bump",
