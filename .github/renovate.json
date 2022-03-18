@@ -1,6 +1,6 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
-        "github>habx/devops-repo-shared-configs//renovate/renovate-preset"
+        "github>habx/devops-repo-shared-configs//renovate/renovate-preset#v0.1.0"
     ]
 }
