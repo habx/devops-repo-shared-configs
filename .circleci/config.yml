@@ -42,11 +42,11 @@ jobs:
       #- run: git pull -v
       - run: renovate/update_version.py
       # - run: git diff
-      - run: | # [[ `git status --porcelain` ]] && 
+      - run: | # [[ `git status --porcelain` ]] &&
             set -x
             git status --porcelain
             git add renovate/*.json
-            git commit -m "[SKIP CI] version sync"
+            git commit -m "Automatic version sync" || exit 0
             git push -v --set-upstream origin ${CIRCLE_BRANCH}
 
 # Invoke jobs via workflows
