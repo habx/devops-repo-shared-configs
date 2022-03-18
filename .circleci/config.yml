@@ -38,15 +38,13 @@ jobs:
       - run: git status
       - run: git config --global user.name "CircleCI Bot"
       - run: git config --global user.email tech@habx.fr
-      - run: git pull -v
+      #- run: git pull -v
       - run: renovate/update_version.py
-      - run: git diff
-      - run: |
-          if [[ `git status --porcelain` ]] && [[ "${CIRCLE_BRANCH}" = "dev" ]]; then 
-            git add .
+      # - run: git diff
+      - run: | # [[ `git status --porcelain` ]] && 
+            git add renovate/*.json
             git commit -m "[SKIP CI] version sync"
-            # git push
-          fi
+            git push -v
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
