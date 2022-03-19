@@ -5,4 +5,7 @@ branches:
   - name: dev
     protection:
       required_status_checks:
-        contexts: ["ci/circleci: build", "tests"]
+        # This should be this:
+        # contexts: ["ci/circleci: build", "tests"]
+        # But until the CI is updated we need to stick to that:
+        contexts: ["deploy-to-dev"]
