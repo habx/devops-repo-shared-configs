@@ -25,7 +25,7 @@ for file_name in glob.glob("renovate/*.json"):
     
     for k, ext in enumerate(extends):
         if m := RE_SHARED.match(ext):
-            j["extends"][k] = f"github>habx/devops-repo-shared-configs//{m.group(1)}#{version}"
+            j["extends"][k] = f"github>habx/devops-repo-shared-configs//{m.group(1)}#v{version}"
 
     logging.info("Writing file: %s", file_name)
     file.write_text(json.dumps(j, indent=4))

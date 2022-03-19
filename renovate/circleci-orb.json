@@ -1,12 +1,15 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
-        "github>habx/devops-repo-shared-configs//renovate/global#0.1.0"
+        "github>habx/devops-repo-shared-configs//renovate/global"
     ],
     "circleci": {
         "fileMatch": [
             ".circleci/config.yml",
             "src/@orb.yml"
         ]
-    }
+    },
+    "schedule": [
+        "at any time"
+    ]
 }
