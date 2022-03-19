@@ -5,4 +5,4 @@ branches:
   - name: dev
     protection:
       required_status_checks:
-        contexts: ["check", "lint", "pack"]
+        contexts: ["ci/circleci: check", "ci/circleci: lint", "ci/circleci: pack"]
