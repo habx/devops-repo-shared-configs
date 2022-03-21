@@ -1,0 +1,12 @@
+---
+# https://probot.github.io/docs/best-practices/#store-configuration-in-the-repository
+_extends: devops-repo-shared-configs:github-settings/global.yml
+
+branches:
+  - name: dev
+    protection:
+      required_status_checks:
+        # This should be this:
+        # contexts: ["ci/circleci: build", "tests"]
+        # But until the CI is updated we need to stick to that:
+        contexts: ["deploy-to-dev"]
