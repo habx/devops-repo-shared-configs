@@ -24,8 +24,17 @@ jobs:
             curl $(jq -r '."$schema"' global.json) -o .schema.json
             pip3 install json-spec
             for file in $(ls *.json); do
-              echo "Validating $file"
+              echo "Validating ${file}"
               json validate --document-file=${file} --schema-file=.schema.json
+            done
+      - run: 
+          name: "lint github settings"
+          command: |
+            cd github-settings
+            pip3 install 
+            for file in $(ls *.yml); do
+              echo "Validating ${file}"
+              yamllint ${file}
             done
     tool-3d-files-conversion-prod:
 
