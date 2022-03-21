@@ -27,11 +27,11 @@ jobs:
               echo "Validating ${file}"
               json validate --document-file=${file} --schema-file=.schema.json
             done
-      - run: 
+      - run:
           name: "lint github settings"
           command: |
             cd github-settings
-            pip3 install 
+            pip3 install
             for file in $(ls *.yml); do
               echo "Validating ${file}"
               yamllint ${file}
