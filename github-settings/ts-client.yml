@@ -7,6 +7,6 @@ branches:
     protection:
       required_status_checks:
         # This should be this:
-        # contexts: ["ci/circleci: build", "tests"]
+        contexts: ["ci/circleci: build", "tests"]
         # But until the CI is updated we need to stick to that:
-        contexts: ["deploy-to-dev"]
+        # contexts: ["deploy-to-dev"]
