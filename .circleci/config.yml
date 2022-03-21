@@ -30,9 +30,8 @@ jobs:
       - run:
           name: "lint github settings"
           command: |
-            cd github-settings
             pip3 install yamllint
-            for file in $(ls *.yml); do
+            for file in $(ls github-settings/*.yml); do
               echo "Validating ${file}"
               yamllint ${file}
             done
