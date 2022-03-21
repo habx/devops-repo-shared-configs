@@ -40,5 +40,6 @@
                 "dependencies"
             ]
         }
-    ]
+    ],
+    "labels": [ "dependencies-ts-service" ]
 }
