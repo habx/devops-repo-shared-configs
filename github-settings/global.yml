@@ -11,7 +11,7 @@ labels:
     description: Automatically merge this PR
     color: ff66cc
     oldname: habx-automerge
-   - name: automerge-noupdate
+  - name: automerge-noupdate
     description: Automatically merge this PR without updating it
     color: ff66cc
     oldname: habx-automerge
