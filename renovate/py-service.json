@@ -1,6 +1,5 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "enabled": true,
     "extends": [
         "github>habx/devops-repo-shared-configs//renovate/py-base"
     ]
