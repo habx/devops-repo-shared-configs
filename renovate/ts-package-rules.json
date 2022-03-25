@@ -9,6 +9,7 @@
             "version": "<17"
         }
     },
+    "ignoreDeps": ["husky", "vite-plugin-checker"],
     "packageRules": [
         {
             "packagePatterns": [
@@ -28,9 +29,8 @@
                 "patch"
             ],
             "automerge": true,
-            "labels": [
-                "automerge-noupdate",
-                "dependencies"
+            "addLabels": [
+                "automerge-noupdate"
             ]
         },
         {
@@ -78,9 +78,8 @@
             ],
             "automerge": true,
             "prPriority": -5,
-            "labels": [
-                "automerge-noupdate",
-                "dependencies"
+            "addLabels": [
+                "automerge-noupdate"
             ]
         },
         {
@@ -91,7 +90,7 @@
             ],
             "automerge": false,
             "stabilityDays": 7,
-            "labels": []
+            "labels": ["dependencies"]
         },
         {
             "packagePatterns": [
@@ -104,9 +103,8 @@
             ],
             "automerge": true,
             "prPriority": -10,
-            "labels": [
-                "automerge-noupdate",
-                "dependencies"
+            "addLabels": [
+                "automerge-noupdate"
             ]
         },
         {
@@ -124,6 +122,12 @@
                 "graphql"
             ],
             "allowedVersions": "<16"
+        },
+        {
+            "matchPackageNames": [
+                "cypress"
+            ],
+            "allowedVersions": "<9.1"
         }
     ]
 }

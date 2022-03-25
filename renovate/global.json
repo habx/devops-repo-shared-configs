@@ -17,9 +17,8 @@
         "before 6:00am on Monday"
     ],
     "vulnerabilityAlerts": {
-        "labels": [
-            "security",
-            "dependencies"
+        "addLabels": [
+            "security"
         ],
         "schedule": [
             "at any time"
@@ -27,6 +26,7 @@
         "prPriority": 10
     },
     "labels": [
-        "dependencies"
+        "dependencies",
+        "renovate"
     ]
 }

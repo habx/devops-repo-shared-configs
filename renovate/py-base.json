@@ -32,8 +32,9 @@
                 "patch"
             ],
             "automerge": true,
-            "labels": [
-                "automerge-noupdate"
+            "addLabels": [
+                "automerge-noupdate",
+                "renovate:python"
             ]
         }
     ]

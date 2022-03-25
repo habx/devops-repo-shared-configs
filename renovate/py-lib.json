@@ -2,5 +2,8 @@
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
         "github>habx/devops-repo-shared-configs//renovate/py-base"
+    ],
+    "addLabels": [
+        "renovate:py-lib"
     ]
 }

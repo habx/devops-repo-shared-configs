@@ -6,7 +6,7 @@
     "schedule": [
         "at any time"
     ],
-    "labels": [
+    "addLabels": [
         "autorelease-group"
     ]
 }

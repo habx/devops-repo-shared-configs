@@ -1,40 +1,37 @@
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends": [
-        "github>habx/devops-repo-shared-configs//renovate/global",
-        "github>habx/devops-repo-shared-configs//renovate/ts-package-rules"
-    ],
-    "ignoreDeps": [
-        "husky"
-    ],
-    "packageRules": [
-        {
-            "updateTypes": [
-                "minor",
-                "patch"
-            ],
-            "depTypeList": [
-                "devDependencies"
-            ],
-            "automerge": true,
-            "labels": [
-                "automerge-noupdate",
-                "dependencies"
-            ]
-        },
-        {
-            "updateTypes": [
-                "patch"
-            ],
-            "depTypeList": [
-                "dependencies",
-                "peerDependencies"
-            ],
-            "automerge": true,
-            "labels": [
-                "automerge-noupdate",
-                "dependencies"
-            ]
-        }
-    ]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>habx/devops-repo-shared-configs//renovate/ts-front"
+  ],
+  "addLabels": [
+    "renovate:ts-front"
+  ],
+  "packageRules": [
+    {
+      "updateTypes": [
+        "minor",
+        "patch"
+      ],
+      "depTypeList": [
+        "devDependencies"
+      ],
+      "automerge": true,
+      "addLabels": [
+        "automerge-noupdate"
+      ]
+    },
+    {
+      "updateTypes": [
+        "patch"
+      ],
+      "depTypeList": [
+        "dependencies",
+        "peerDependencies"
+      ],
+      "automerge": true,
+      "addLabels": [
+        "automerge-noupdate"
+      ]
+    }
+  ]
 }
