@@ -25,6 +25,9 @@
         "pipenv",
         "pip_setup"
     ],
+    "addLabels": [
+        "renovate:python"
+    ],
     "packageRules": [
         {
             "updateTypes": [
@@ -33,8 +36,7 @@
             ],
             "automerge": true,
             "addLabels": [
-                "automerge-noupdate",
-                "renovate:python"
+                "automerge-noupdate"
             ]
         }
     ]
