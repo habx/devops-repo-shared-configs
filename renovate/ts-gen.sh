@@ -1,4 +1,7 @@
 
+echo "Don't use this anymore"
+exit 1
+
 jinja2 ts-generic.json.j2 -o ts-service.json -D client=false
 jinja2 ts-generic.json.j2 -o ts-tool.json -D client=false
 jinja2 ts-generic.json.j2 -o ts-client.json -D client=true
