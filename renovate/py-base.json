@@ -31,10 +31,6 @@
                 "minor",
                 "patch"
             ],
-            "depTypeList": [
-                "dependencies",
-                "devDependencies"
-            ],
             "automerge": true,
             "labels": [
                 "automerge-noupdate"
