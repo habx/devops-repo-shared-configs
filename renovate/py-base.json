@@ -1,5 +1,7 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "enabled": false,
+    "description": "Doesn't work because of issues connecting to gemfury",
     "extends": [
         "github>habx/devops-repo-shared-configs//renovate/global"
     ],
@@ -30,6 +32,7 @@
     ],
     "packageRules": [
         {
+            "matchDepTypes": ["packages", "dev-packages"],
             "updateTypes": [
                 "minor",
                 "patch"
