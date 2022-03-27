@@ -1,6 +1,6 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "enabled": false,
+    "enabled": true,
     "description": "Doesn't work because of issues connecting to gemfury",
     "extends": [
         "github>habx/devops-repo-shared-configs//renovate/global"
@@ -9,8 +9,10 @@
        {
          "hostType": "pypi",
          "matchHost": "pypi.fury.io",
-         "username": "1Ub4Pv-SFP3y2ti2hi2ILlj2u7WQndfRQ",
-         "password": ""
+         "password": "",
+         "encrypted": {
+            "username": "wcFMA/xDdHCJBTolAQ/9EskvPun926+7/RSAKpRH8Bld8jFrXshR0+T5pdaX1Ngdfqig7LWT4zTYRb8nvAj5Utr+iQSA1PRSz182f96I15fUtBQP3QRHKgTAeM0+X/C2tHxkblDR0VHC2DIVkRqP2XGdV9MybUpyFsGrKimpwcz2nZAA5L+yOsXbQ/r/NZHqYt47p5z04cdgxh/Dekmx1DkXPIUMuFAR3/jzomISzvbPyGM/KJuFm1e6yk4CA3kWrtnY6Ia28FwP45xiGum0jJUq7kqXxIKb4yzzKN8ilDrE3Kx6iTAIr6bwXRZwSRrP9VlMEFxZQepS/fVnNzItDNJ2MHgI9D6Uh+BboNlMLo3/b+ehwhXyeOYIDR3tVJsRQ5LtiGakRHsikTUbixOx+3Z2Q+hiykQpPJEJ+5IFt0CYTlDigV4sxQKT85uBlky4qcWEHmj5cOzJ18M8urz8qQBndVi1EAfbv3S5VwO9YrZK/EjHYloKRvXDvWPtWFbtXDO2CPVETrsiOL1oihJ0lg/rUnFEy890aJVAzgIPQ4idxihIE0yvEyOV9nA9kKkS1dHvavmN/OwPdE3suntWiAB7rVnK5tOSRxvfOArn51eBP7fmzT1Go/hrq6pgDu8YcNgLnTgEd8h3lVIWZ6lRCnY+oaMJWNH7RVgi7k8yOBcTUWCjkyJI673eKA8b9pnSagH7KAdBh7PuGPkbrQRLi7GyRWXMVK6cJTj4Z1ZJYuBF5fLYWk6yhzs1bl2C7L6V1BBLBJq5zoBKv08R3kxEC26pyMQ1cB0NB1vw9YBbEHQxyZEdeHc4R2gDMUn4L6w/a2g1xjMjuiC4TBE"
+        }
        }
     ],
     "python": {
@@ -22,8 +24,8 @@
     "enabledManagers": [
         "circleci",
         "dockerfile",
-        "pipenv",
-        "pip_setup"
+        "pipenv_DISABLED",
+        "pip_setup_DISABLED"
     ],
     "addLabels": [
         "renovate:python"

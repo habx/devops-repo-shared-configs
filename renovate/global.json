@@ -7,7 +7,8 @@
         "renovate",
         "circleci"
     ],
-    "masterIssue": true,
+    "dependencyDashboard": true,
+    "dependencyDashboardAutoclose": true,
     "rangeStrategy": "bump",
     "separateMinorPatch": true,
     "prConcurrentLimit": 10,
