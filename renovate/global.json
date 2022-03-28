@@ -35,11 +35,11 @@
             "matchManagers": [
                 "circleci"
             ],
-            "addLabel": [
+            "addLabels": [
                 "renovate:circleci",
                 "automerge-noupdate"
             ],
-            "matchPackages": [
+            "matchPackagePatterns": [
                 "^habx/.*"
             ],
             "autoMerge": true,
