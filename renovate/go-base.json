@@ -4,6 +4,8 @@
         "github>habx/devops-repo-shared-configs//renovate/global"
     ],
     "enabledManagers": [
+        "circleci",
+        "dockerfile",
         "golang"
     ],
     "packageRules": [
