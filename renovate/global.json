@@ -12,9 +12,9 @@
     "rangeStrategy": "bump",
     "separateMinorPatch": true,
     "prConcurrentLimit": 10,
-    "prHourlyLimit": 10,
     "timezone": "Europe/Paris",
     "schedule": [
+        "every weekend",
         "before 6:00am on Monday"
     ],
     "vulnerabilityAlerts": {
