@@ -11,7 +11,7 @@
     "packageRules": [
         {
             "matchManagers": [
-                "golang"
+                "gomod"
             ],
             "addLabels": [
                 "renovate:golang"
@@ -23,6 +23,9 @@
                 "pin",
                 "digest"
             ],
+            "matchManagers": [
+                "gomod"
+            ],
             "automerge": true,
             "addLabels": [
                 "automerge-noupdate"
@@ -32,6 +35,9 @@
             "updateTypes": [
                 "major",
                 "minor"
+            ],
+            "matchManagers": [
+                "gomod"
             ],
             "matchPackagePatterns": [
                 "^github.com/habx/"
