@@ -29,5 +29,23 @@
     "labels": [
         "dependencies",
         "renovate"
+    ],
+    "packageRules": [
+        {
+            "matchManagers": [
+                "circleci"
+            ],
+            "addLabel": [
+                "renovate:circleci",
+                "automerge-noupdate"
+            ],
+            "matchPackages": [
+                "^habx/.*"
+            ],
+            "autoMerge": true,
+            "schedule": [
+                "at any time"
+            ]
+        }
     ]
 }
