@@ -1,0 +1,47 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "github>habx/devops-repo-shared-configs//renovate/global"
+    ],
+    "enabledManagers": [
+        "golang"
+    ],
+    "packageRules": [
+        {
+            "matchManagers": [
+                "golang"
+            ],
+            "addLabels": [
+                "renovate:golang"
+            ]
+        },
+        {
+            "updateTypes": [
+                "patch",
+                "pin",
+                "digest"
+            ],
+            "automerge": true,
+            "addLabels": [
+                "automerge-noupdate"
+            ]
+        },
+        {
+            "updateTypes": [
+                "major",
+                "minor"
+            ],
+            "matchPackagePatterns": [
+                "^github.com/habx/"
+            ],
+            "automerge": true,
+            "addLabels": [
+                "automerge-noupdate"
+            ],
+            "schedule": [
+                "at any time"
+            ],
+            "prPriority": 5
+        }
+    ]
+}
