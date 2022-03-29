@@ -83,16 +83,6 @@
             ]
         },
         {
-            "packageNames": [
-                "three",
-                "@types/three",
-                "react-scripts"
-            ],
-            "automerge": false,
-            "stabilityDays": 7,
-            "labels": ["dependencies"]
-        },
-        {
             "packagePatterns": [
                 "^@sentry/",
                 "^@types/"
@@ -128,6 +118,16 @@
                 "cypress"
             ],
             "allowedVersions": "<9.1"
+        },
+        {
+            "packageNames": [
+                "three",
+                "@types/three",
+                "react-scripts"
+            ],
+            "automerge": false,
+            "stabilityDays": 7,
+            "labels": ["dependencies", "renovate", "automerge-disabled"]
         }
     ]
 }
