@@ -27,7 +27,10 @@ labels:
     color: ff66cc
     oldname: habx-automerge
   - name: autorelease-group
-    description: Automatically create a release after the last label has been merged
+    description: Automatically create a release after all PRs with this label have been merged
+    color: ff66cc
+  - name: autorelease-standalone
+    description: Automatically create a release after the PR with this label has been merge
     color: ff66cc
   - name: autorelease-major
     description: Automatically create a major release after merge
@@ -40,6 +43,12 @@ labels:
     color: 0366d6
   - name: renovate
     description: This PR updates dependencies
+    color: 0366d6
+  - name: renovate:front
+    description: Frontend dependency
+    color: 0366d6
+  - name: renovate:back
+    description: Backend dependency
     color: 0366d6
   - name: security
     description: This PR relates to security
