@@ -36,15 +36,15 @@
                 "circleci"
             ],
             "addLabels": [
-                "renovate:circleci",
-                "automerge-noupdate"
+                "renovate:circleci"
             ],
-            "matchPackagePatterns": [
-                "^habx/.*"
+            "updateTypes": [
+                "minor",
+                "patch"
             ],
             "autoMerge": true,
             "schedule": [
-                "at any time"
+                "[before 9am, after 7pm]"
             ]
         }
     ]

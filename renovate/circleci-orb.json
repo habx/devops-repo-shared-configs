@@ -10,6 +10,6 @@
         ]
     },
     "schedule": [
-        "at any time"
+        "[before 9am, after 7pm]"
     ]
 }
