@@ -1,7 +1,7 @@
 ---
 # These settings are synced to GitHub by https://probot.github.io/apps/settings/
 # See https://github.com/apps/settings
-# last_update: 2022-04-08
+# last_update: 2022-04-08-A
 repository:
   has_issues: true
   has_wiki: false
@@ -34,10 +34,11 @@ labels:
     description: Automatically update this PR
     color: 15e3ee
   - name: autorelease
-    description: Automatically create a release after merge
-    color: ff66cc
-  - name: autorelease-group
     description: Automatically create a release after all PRs with this label have been merged
+    color: ff66cc
+    oldname: autorelease-group
+  - name: autorelease-standalone
+    description: Automatically create a release after merge
     color: ff66cc
   - name: autorelease-standalone
     description: Automatically create a release after the PR with this label has been merge
