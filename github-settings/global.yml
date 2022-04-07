@@ -1,6 +1,8 @@
 ---
 # These settings are synced to GitHub by https://probot.github.io/apps/settings/
 # See https://github.com/apps/settings
+habx:
+  last_update: '2022-04-07'
 repository:
   has_issues: true
   has_wiki: false
