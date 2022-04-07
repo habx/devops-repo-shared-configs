@@ -1,7 +1,7 @@
 ---
 # These settings are synced to GitHub by https://probot.github.io/apps/settings/
 # See https://github.com/apps/settings
-# last_update: 2022-04-07
+# last_update: 2022-04-08
 repository:
   has_issues: true
   has_wiki: false
@@ -15,12 +15,24 @@ labels:
   - name: automerge-noupdate
     description: Automatically merge this PR without updating it
     color: e5ee15
+  - name: automerge-delayed-1day
+    description: PR will be merged in 1 day
+    color: e5ee15
+  - name: automerge-delayed-2days
+    description: PR will be merged in 1 days
+    color: e5ee15
+  - name: automerge-delayed-4days
+    description: PR will be merged in 4 days
+    color: e5ee15
+  - name: automerge-delayed-1week
+    description: PR will be merged in 1 week
+    color: e5ee15
+  - name: automerge-delayed-2weeks
+    description: PR will be merged in 2 weeks
+    color: e5ee15
   - name: autoupdate
     description: Automatically update this PR
     color: 15e3ee
-  - name: automerge-noupdate
-    description: Merge without updating this PR
-    color: cccccc
   - name: autorelease
     description: Automatically create a release after merge
     color: ff66cc
