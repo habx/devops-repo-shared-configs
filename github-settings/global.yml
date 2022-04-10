@@ -32,7 +32,7 @@ labels:
     color: e5ee15
   - name: automerge-failed
     description: For internal issue tracking
-    color: '000000'
+    color: cccccc
   - name: autoupdate
     description: Automatically update this PR
     color: 15e3ee
