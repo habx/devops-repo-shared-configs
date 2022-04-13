@@ -9,7 +9,7 @@
             "allowedVersions": "<4"
         },
         {
-            "description": "https://github.com/sindresorhus/p-limit",
+            "description": "https://github.com/sindresorhus/p-map",
             "matchPackageNames": [
                 "p-map"
             ],
