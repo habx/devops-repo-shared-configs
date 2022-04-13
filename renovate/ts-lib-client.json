@@ -6,6 +6,12 @@
   ],
   "packageRules": [
     {
+      "matchPackageNames": [
+          "@habx/config-ci-front"
+      ],
+      "allowedVersions": "<1"
+    },
+    {
       "updateTypes": [
         "minor",
         "patch"
