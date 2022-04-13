@@ -4,9 +4,6 @@
     "github>habx/devops-repo-shared-configs//renovate/global",
     "github>habx/devops-repo-shared-configs//renovate/ts-package-rules"
   ],
-  "addLabels": [
-    "renovate:ts"
-  ],
   "packageRules": [
     {
       "updateTypes": [

@@ -10,7 +10,7 @@
         "vite-plugin-checker"
     ],
     "addLabels": [
-        "renovate:ts-client"
+        "renovate:client"
     ],
     "packageRules": [
         {
