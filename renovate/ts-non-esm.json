@@ -22,6 +22,12 @@
             "allowedVersions": "<3"
         },
         {
+            "matchPackageNames": [
+                "p-filter"
+            ],
+            "allowedVersions": "<3"
+        },
+        {
             "description": "ttps://github.com/sindresorhus/got",
             "matchPackageNames": [
                 "got"
