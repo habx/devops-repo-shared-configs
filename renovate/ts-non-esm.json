@@ -16,12 +16,21 @@
             "allowedVersions": "<5"
         },
         {
+            "description": "ttps://github.com/sindresorhus/p-reduce",
             "matchPackageNames": [
                 "p-reduce"
             ],
             "allowedVersions": "<3"
         },
         {
+            "description": "ttps://github.com/sindresorhus/p-queue",
+            "matchPackageNames": [
+                "p-queue"
+            ],
+            "allowedVersions": "<7"
+        },
+        {
+            "description": "ttps://github.com/sindresorhus/p-filter",
             "matchPackageNames": [
                 "p-filter"
             ],
