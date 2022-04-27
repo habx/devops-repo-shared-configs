@@ -1,5 +1,5 @@
 # https://probot.github.io/docs/best-practices/#store-configuration-in-the-repository
-# last_update: 2022-04-10
+# last_update: 2022-04-26
 _extends: devops-repo-shared-configs:github-settings/renovate-preset.yml
 
 branches:
