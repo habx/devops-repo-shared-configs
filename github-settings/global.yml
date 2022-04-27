@@ -1,7 +1,7 @@
 ---
 # These settings are synced to GitHub by https://probot.github.io/apps/settings/
 # See https://github.com/apps/settings
-# last_update: 2022-04-26
+# last_update: 2022-04-27
 repository:
   has_issues: true
   has_wiki: false
