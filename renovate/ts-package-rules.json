@@ -65,7 +65,6 @@
         },
         {
             "packageNames": [
-                "knex",
                 "lodash",
                 "typescript",
                 "lint-staged"
