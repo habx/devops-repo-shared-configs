@@ -37,6 +37,13 @@
             "allowedVersions": "<3"
         },
         {
+            "description": "ttps://github.com/sindresorhus/p-whilst",
+            "matchPackageNames": [
+                "p-whilst"
+            ],
+            "allowedVersions": "<3"
+        },
+        {
             "description": "ttps://github.com/sindresorhus/got",
             "matchPackageNames": [
                 "got"
