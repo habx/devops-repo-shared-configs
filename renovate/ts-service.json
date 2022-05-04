@@ -6,27 +6,9 @@
   ],
   "packageRules": [
     {
-      "updateTypes": [
-        "major",
+      "matchUpdateTypes": [
         "minor",
         "patch"
-      ],
-      "depTypeList": [
-        "devDependencies"
-      ],
-      "automerge": true,
-      "addLabels": [
-        "automerge-noupdate"
-      ]
-    },
-    {
-      "updateTypes": [
-        "minor",
-        "patch"
-      ],
-      "depTypeList": [
-        "dependencies",
-        "peerDependencies"
       ],
       "automerge": true,
       "addLabels": [
