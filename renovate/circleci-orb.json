@@ -8,8 +8,5 @@
             ".circleci/config.yml",
             "src/@orb.yml"
         ]
-    },
-    "schedule": [
-        "[before 9am, after 7pm]"
-    ]
+    }
 }

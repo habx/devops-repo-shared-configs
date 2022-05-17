@@ -13,17 +13,11 @@
     "rangeStrategy": "bump",
     "separateMinorPatch": true,
     "prConcurrentLimit": 10,
+    "prHourlyLimit": 2,
     "timezone": "Europe/Paris",
-    "schedule": [
-        "every weekend",
-        "before 6:00am on Monday"
-    ],
     "vulnerabilityAlerts": {
         "addLabels": [
             "security"
-        ],
-        "schedule": [
-            "at any time"
         ],
         "prPriority": 10
     },
@@ -43,10 +37,7 @@
                 "minor",
                 "patch"
             ],
-            "autoMerge": true,
-            "schedule": [
-                "[before 9am, after 7pm]"
-            ]
+            "autoMerge": true
         }
     ]
 }

@@ -46,9 +46,6 @@
             "addLabels": [
                 "automerge-noupdate"
             ],
-            "schedule": [
-                "at any time"
-            ],
             "prPriority": 5
         }
     ]
