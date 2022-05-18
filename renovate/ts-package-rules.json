@@ -5,6 +5,7 @@
         "renovate"
     ],
     "stabilityDays": 7,
+    "prCreation": "not-pending",
     "ignoreDeps": ["husky", "vite-plugin-checker"],
     "packageRules": [
         {
@@ -12,7 +13,8 @@
                 "^@habx/"
             ],
             "prPriority": 5,
-            "stabilityDays": 0
+            "stabilityDays": 0,
+            "prCreation": "immediate"
         },
         {
             "matchPackagePatterns": [
