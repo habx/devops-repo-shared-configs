@@ -3,9 +3,6 @@
     "extends": [
         "github>habx/devops-repo-shared-configs//renovate/global"
     ],
-    "schedule": [
-        "at any time"
-    ],
     "addLabels": [
         "autorelease",
         "automerge-delayed-1week"

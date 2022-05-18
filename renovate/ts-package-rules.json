@@ -9,22 +9,22 @@
             "version": "<17"
         }
     },
+    "stabilityDays": 3,
+    "prCreation": "not-pending",
     "ignoreDeps": ["husky", "vite-plugin-checker"],
     "packageRules": [
         {
-            "packagePatterns": [
+            "matchPackagePatterns": [
                 "^@habx/"
             ],
-            "schedule": [
-                "at any time"
-            ],
-            "prPriority": 5
+            "prPriority": 5,
+            "stabilityDays": 0
         },
         {
-            "packagePatterns": [
+            "matchPackagePatterns": [
                 "^@habx/"
             ],
-            "updateTypes": [
+            "matchUpdateTypes": [
                 "minor",
                 "patch"
             ],
@@ -34,14 +34,14 @@
             ]
         },
         {
-            "packageNames": [
+            "matchPackageNames": [
                 "@habx/lib-client-housing-2d",
                 "@habx/lib-housing-mosaic"
             ],
             "groupName": "mosaic changes"
         },
         {
-            "packageNames": [
+            "matchPackageNames": [
                 "typescript",
                 "typedoc"
             ],
@@ -49,14 +49,14 @@
         },
         {
             "description": "This allows clients to upgrade the 3D libraries together",
-            "packageNames": [
+            "matchPackageNames": [
                 "@habx/lib-client-housing-3d",
                 "@habx/lib-housing-3d-scene"
             ],
             "groupName": "3d changes"
         },
         {
-            "packageNames": [
+            "matchPackageNames": [
                 "ts-jest",
                 "jest",
                 "@types/jest"
@@ -64,7 +64,7 @@
             "groupName": "jest changes"
         },
         {
-            "packageNames": [
+            "matchPackageNames": [
                 "lodash",
                 "typescript",
                 "lint-staged"
@@ -118,13 +118,12 @@
             "allowedVersions": "<9.1"
         },
         {
-            "packageNames": [
+            "matchPackageNames": [
                 "three",
                 "@types/three",
                 "react-scripts"
             ],
             "automerge": false,
-            "stabilityDays": 3,
             "labels": ["dependencies", "renovate", "automerge-disabled"]
         }
     ]
