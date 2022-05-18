@@ -5,7 +5,6 @@
         "renovate"
     ],
     "stabilityDays": 7,
-    "prCreation": "not-pending",
     "ignoreDeps": ["husky", "vite-plugin-checker"],
     "packageRules": [
         {
