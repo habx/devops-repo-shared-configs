@@ -59,6 +59,12 @@
             "groupName": "jest changes"
         },
         {
+            "matchPackagePatterns": [
+                "^@cubejs-client/"
+            ],
+            "groupName": "Cube.js changes"
+        },
+        {
             "matchPackageNames": [
                 "lodash",
                 "typescript",
