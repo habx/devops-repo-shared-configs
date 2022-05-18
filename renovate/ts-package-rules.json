@@ -4,11 +4,6 @@
         "npm",
         "renovate"
     ],
-    "constraints": {
-        "node": {
-            "version": "<17"
-        }
-    },
     "stabilityDays": 3,
     "prCreation": "not-pending",
     "ignoreDeps": ["husky", "vite-plugin-checker"],
