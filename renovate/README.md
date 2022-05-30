@@ -1,11 +1,12 @@
 # Renovate dependencies
 ```mermaid
 graph TD;
-ts-npmrc("ts-npmrc") --> ts-service("ts-service")
-ts-npmrc("ts-npmrc") --> ts-client("ts-client")
-ts-npmrc("ts-npmrc") --> ts-tool("ts-tool")
-ts-npmrc("ts-npmrc") --> ts-lib-client("ts-lib-client")
-ts-npmrc("ts-npmrc") --> ts-lib-service("ts-lib-service")
+ts-npmrc-public("ts-npmrc-public") --> ts-lib-client-public("ts-lib-client-public")
+ts-npmrc-private("ts-npmrc-private") --> ts-service("ts-service")
+ts-npmrc-private("ts-npmrc-private") --> ts-client("ts-client")
+ts-npmrc-private("ts-npmrc-private") --> ts-tool("ts-tool")
+ts-npmrc-private("ts-npmrc-private") --> ts-lib-client("ts-lib-client")
+ts-npmrc-private("ts-npmrc-private") --> ts-lib-service("ts-lib-service")
 ts-non-esm("ts-non-esm") --> ts-back("ts-back")
 ts-package-rules("ts-package-rules") --> ts-back("ts-back")
 ts-package-rules("ts-package-rules") --> ts-front("ts-front")
