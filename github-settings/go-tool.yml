@@ -1,0 +1,10 @@
+---
+# https://probot.github.io/docs/best-practices/#store-configuration-in-the-repository
+# last_update: 2022-05-30
+_extends: devops-repo-shared-configs:github-settings/global.yml
+
+branches:
+  - name: dev
+    protection:
+      required_status_checks:
+        contexts: ["tests", "codecov/project", "codecov/patch"]
