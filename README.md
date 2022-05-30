@@ -1,7 +1,4 @@
-# Shared config for other repos
-
-## Github settings
-
-
-## Renovate
-
+# Renovate dependencies
+```mermaid
+graph TD;
+```
