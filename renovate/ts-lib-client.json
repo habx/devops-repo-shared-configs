@@ -2,7 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "github>habx/devops-repo-shared-configs//renovate/ts-front",
-    "github>habx/devops-repo-shared-configs//renovate/ts-npmrc"
+    "github>habx/devops-repo-shared-configs//renovate/ts-npmrc-private"
   ],
   "packageRules": [
     {
