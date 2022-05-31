@@ -63,7 +63,13 @@
             "matchPackagePatterns": [
                 "^@cubejs-client/"
             ],
-            "groupName": "Cube.js changes"
+            "groupName": "Cube.js frontend changes"
+        },
+        {
+            "matchPackagePatterns": [
+                "^@cubejs-backend/"
+            ],
+            "groupName": "Cube.js backend changes"
         },
         {
             "matchPackageNames": [
@@ -102,9 +108,8 @@
             "matchPackageNames": [
                 "aws-sdk"
             ],
-            "schedule": [
-                "monthly"
-            ]
+            "stabilityDays": 3,
+            "prPriority": -10
         },
         {
             "description": "GraphQL should stay below v16",
