@@ -1,7 +1,7 @@
 ---
 # These settings are synced to GitHub by https://probot.github.io/apps/settings/
 # See https://github.com/apps/settings
-# last_update: 2022-05-18
+# last_update: 2022-06-01
 repository:
   has_issues: true
   has_wiki: false
@@ -12,7 +12,7 @@ labels:
     description: Automatically merge this PR
     color: e5ee15
   - name: squash
-    description: Squash PR merges
+    description: Squash PR commits during merge
     color: e99695
   - name: automerge-noupdate
     description: Automatically merge this PR without updating it
@@ -41,7 +41,6 @@ labels:
   - name: autorelease
     description: Automatically create a release after all PRs with this label have been merged
     color: ff66cc
-    oldname: autorelease-group
   - name: autorelease-standalone
     description: Automatically create a release after merge
     color: ff66cc
