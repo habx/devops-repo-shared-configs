@@ -1,7 +1,7 @@
 ---
 # These settings are synced to GitHub by https://probot.github.io/apps/settings/
 # See https://github.com/apps/settings
-# last_update: 2022-06-01
+# last_update: 2022-06-02
 repository:
   has_issues: true
   has_wiki: false
@@ -71,6 +71,9 @@ labels:
   - name: security
     description: This PR relates to security
     color: ee0701
+  - name: no-jira-issue
+    description: No JIRA issue should be created
+    color: cccccc
 
 branches:
   - name: dev
