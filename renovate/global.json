@@ -31,13 +31,14 @@
                 "circleci"
             ],
             "addLabels": [
-                "renovate:circleci"
+                "renovate:circleci",
+                "automerge-noupdate"
             ],
             "updateTypes": [
                 "minor",
                 "patch"
             ],
-            "autoMerge": true
+            "automerge": true
         }
     ]
 }
