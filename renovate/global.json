@@ -5,7 +5,6 @@
         ":semanticCommits"
     ],
     "enabledManagers": [
-        "renovate",
         "circleci"
     ],
     "dependencyDashboard": true,
