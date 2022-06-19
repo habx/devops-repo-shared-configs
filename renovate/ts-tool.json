@@ -14,7 +14,6 @@
       "depTypeList": [
         "devDependencies"
       ],
-      "automerge": true,
       "addLabels": [
         "automerge-noupdate"
       ]
@@ -28,7 +27,6 @@
         "dependencies",
         "peerDependencies"
       ],
-      "automerge": true,
       "addLabels": [
         "automerge-noupdate"
       ]
