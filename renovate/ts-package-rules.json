@@ -24,7 +24,6 @@
                 "minor",
                 "patch"
             ],
-            "automerge": true,
             "addLabels": [
                 "automerge-noupdate"
             ]
@@ -82,7 +81,6 @@
                 "minor",
                 "patch"
             ],
-            "automerge": true,
             "prPriority": -5,
             "addLabels": [
                 "automerge-noupdate"
@@ -97,7 +95,6 @@
                 "minor",
                 "patch"
             ],
-            "automerge": true,
             "prPriority": -10,
             "addLabels": [
                 "automerge-noupdate"

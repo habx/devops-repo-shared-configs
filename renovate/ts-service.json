@@ -10,7 +10,6 @@
         "minor",
         "patch"
       ],
-      "automerge": true,
       "addLabels": [
         "automerge-noupdate"
       ]
