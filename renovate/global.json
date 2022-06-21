@@ -22,7 +22,8 @@
     },
     "labels": [
         "dependencies",
-        "renovate"
+        "renovate",
+        "squash"
     ],
     "packageRules": [
         {
