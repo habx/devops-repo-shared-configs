@@ -128,7 +128,7 @@
                 "react-scripts"
             ],
             "automerge": false,
-            "labels": ["dependencies", "renovate", "automerge-disabled"]
+            "addLabels": ["automerge-disabled"]
         }
     ]
 }
