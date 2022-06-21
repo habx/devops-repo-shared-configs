@@ -1,12 +1,13 @@
 ---
 # These settings are synced to GitHub by https://probot.github.io/apps/settings/
 # See https://github.com/apps/settings
-# last_update: 2022-06-08
+# last_update: 2022-06-21
 repository:
   has_issues: true
   has_wiki: false
   has_projects: false
   default_branch: dev
+  allow_squash_merge: true
 labels:
   - name: automerge
     description: Automatically merge this PR
