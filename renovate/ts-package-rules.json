@@ -90,7 +90,7 @@
             ]
         },
         {
-            "packagePatterns": [
+            "matchPackagePatterns": [
                 "^@sentry/",
                 "^@types/"
             ],
