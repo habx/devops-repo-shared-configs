@@ -57,9 +57,13 @@
             "matchPackageNames": [
                 "ts-jest",
                 "jest",
+                "jest-junit",
                 "@types/jest"
             ],
-            "groupName": "jest changes"
+            "groupName": "jest changes",
+            "addLabels": [
+                "automerge-noupdate"
+            ]
         },
         {
             "matchPackagePatterns": [
