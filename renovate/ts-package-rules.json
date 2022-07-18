@@ -4,10 +4,13 @@
         "npm",
         "circleci"
     ],
-    "stabilityDays": 7,
     "prCreation": "not-pending",
     "ignoreDeps": ["husky", "vite-plugin-checker"],
     "packageRules": [
+        {
+            "matchPackageManager": ["npm"],
+            "stabilityDays": 7
+        },
         {
             "matchPackagePatterns": [
                 "^@habx/"
@@ -91,7 +94,7 @@
             ]
         },
         {
-            "packagePatterns": [
+            "matchPackagePatterns": [
                 "^@sentry/",
                 "^@types/"
             ],
