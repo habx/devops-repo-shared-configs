@@ -18,11 +18,23 @@
     ],
     "packageRules": [
         {
-            "updateTypes": [
+            "matchManagers": [
+                "dockerfile"
+            ],
+            "matchUpdateTypes": [
                 "minor",
                 "patch"
             ],
-            "depTypeList": [
+            "addLabels": [
+                "automerge-noupdate"
+            ]
+        },
+        {
+            "matchUpdateTypes": [
+                "minor",
+                "patch"
+            ],
+            "matchDepTypes": [
                 "devDependencies"
             ],
             "addLabels": [
@@ -30,10 +42,10 @@
             ]
         },
         {
-            "updateTypes": [
+            "matchUpdateTypes": [
                 "patch"
             ],
-            "depTypeList": [
+            "matchDepTypes": [
                 "dependencies",
                 "peerDependencies"
             ],
