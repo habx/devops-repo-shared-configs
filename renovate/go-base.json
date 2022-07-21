@@ -6,7 +6,7 @@
     "enabledManagers": [
         "circleci",
         "dockerfile",
-        "golang"
+        "gomod"
     ],
     "packageRules": [
         {
