@@ -47,6 +47,12 @@
                 "automerge-noupdate"
             ],
             "prPriority": 5
+        },
+        {
+            "matchPackagePatterns": [
+                "^gorm.io/"
+            ],
+            "groupName": "gorm changes"
         }
     ]
 }
