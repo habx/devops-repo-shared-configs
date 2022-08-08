@@ -18,21 +18,22 @@
             ]
         },
         {
-            "updateTypes": [
+            "matchUpdateTypes": [
+                "minor",
                 "patch",
                 "pin",
                 "digest"
             ],
             "matchManagers": [
-                "gomod"
+                "gomod",
+                "golang"
             ],
-            "automerge": true,
             "addLabels": [
                 "automerge-noupdate"
             ]
         },
         {
-            "updateTypes": [
+            "matchUpdateTypes": [
                 "major",
                 "minor"
             ],
@@ -42,7 +43,6 @@
             "matchPackagePatterns": [
                 "^github.com/habx/"
             ],
-            "automerge": true,
             "addLabels": [
                 "automerge-noupdate"
             ],
