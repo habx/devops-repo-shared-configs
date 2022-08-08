@@ -30,15 +30,14 @@
             "matchManagers": [
                 "circleci"
             ],
-            "addLabels": [
-                "renovate:circleci",
-                "automerge-noupdate"
-            ],
-            "updateTypes": [
+            "matchUpdateTypes": [
                 "minor",
                 "patch"
             ],
-            "automerge": true
+            "addLabels": [
+                "renovate:circleci",
+                "automerge-noupdate"
+            ]
         }
     ]
 }
