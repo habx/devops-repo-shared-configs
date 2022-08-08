@@ -8,5 +8,23 @@
             ".circleci/config.yml",
             "src/@orb.yml"
         ]
-    }
+    },
+    "packageRules": [
+        {
+            "matchManagers": [
+                "circleci"
+            ],
+            "matchPackagePatterns": [
+                "^go$",
+                "^containers$"
+            ],
+            "matchUpdateTypes": [
+                "minor",
+                "patch"
+            ],
+            "addLabels": [
+                "automerge-delayed-4days"
+            ]
+        }
+    ]
 }
