@@ -30,10 +30,11 @@ jobs:
       - run:
           name: "lint github settings"
           command: |
-            pipenv install --system --deploy --ignore-pipfile
-            for file in $(ls github-settings/*.yml); do
+            cd github-settings
+            pipenv install --ignore-pipfile # --system --deploy
+            for file in $(ls *.yml); do
               echo "Validating ${file}"
-              yamllint ${file}
+              pipenv run yamllint ${file}
             done
     tool-3d-files-conversion-prod:
 
