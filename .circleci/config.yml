@@ -21,19 +21,20 @@ jobs:
           name: "lint renovate"
           command: |
             cd renovate
+            pipenv install --ignore-pipfile # --system --deploy
             curl $(jq -r '."$schema"' global.json) -o .schema.json
-            pip3 install json-spec
             for file in $(ls *.json); do
               echo "Validating ${file}"
-              json validate --document-file=${file} --schema-file=.schema.json
+              pipenv run jsonschema -i ${file} .schema.json
             done
       - run:
           name: "lint github settings"
           command: |
-            pip3 install yamllint
-            for file in $(ls github-settings/*.yml); do
+            cd github-settings
+            pipenv install --ignore-pipfile # --system --deploy
+            for file in $(ls *.yml); do
               echo "Validating ${file}"
-              yamllint ${file}
+              pipenv run yamllint ${file}
             done
     tool-3d-files-conversion-prod:
 
