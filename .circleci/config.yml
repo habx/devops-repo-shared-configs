@@ -21,16 +21,16 @@ jobs:
           name: "lint renovate"
           command: |
             cd renovate
+            pipenv install --system --deploy --ignore-pipfile
             curl $(jq -r '."$schema"' global.json) -o .schema.json
-            pip3 install json-spec
             for file in $(ls *.json); do
               echo "Validating ${file}"
-              json validate --document-file=${file} --schema-file=.schema.json
+              jsonschema -i ${file} .schema.json
             done
       - run:
           name: "lint github settings"
           command: |
-            pip3 install yamllint
+            pipenv install --system --deploy --ignore-pipfile
             for file in $(ls github-settings/*.yml); do
               echo "Validating ${file}"
               yamllint ${file}
