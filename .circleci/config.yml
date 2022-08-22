@@ -21,11 +21,11 @@ jobs:
           name: "lint renovate"
           command: |
             cd renovate
-            pipenv install --system --deploy --ignore-pipfile
+            pipenv install --ignore-pipfile # --system --deploy
             curl $(jq -r '."$schema"' global.json) -o .schema.json
             for file in $(ls *.json); do
               echo "Validating ${file}"
-              jsonschema -i ${file} .schema.json
+              pipenv run jsonschema -i ${file} .schema.json
             done
       - run:
           name: "lint github settings"
