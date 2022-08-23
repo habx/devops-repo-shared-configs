@@ -1,0 +1,9 @@
+---
+# https://probot.github.io/docs/best-practices/#store-configuration-in-the-repository
+# last_update: 2022-08-23
+_extends: devops-repo-shared-configs:github-settings/global.yml
+
+labels:
+  - name: renovate:dotnet
+    description: Dependency occuring on a dotnet lib/app
+    color: 0366d6

@@ -1,9 +1,12 @@
 ---
 # https://probot.github.io/docs/best-practices/#store-configuration-in-the-repository
-_extends: devops-repo-shared-configs:github-settings/global.yml
+_extends: devops-repo-shared-configs:github-settings/go-base.yml
 
 branches:
   - name: dev
     protection:
       required_status_checks:
-        contexts: ["tests", "codecov/project", "codecov/patch"]
+        contexts: 
+          - "tests"
+          - "codecov/project"
+          - "codecov/patch"

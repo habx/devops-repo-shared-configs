@@ -1,0 +1,60 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "github>habx/devops-repo-shared-configs//renovate/global"
+    ],
+    "enabledManagers": [
+        "circleci",
+        "nuget"
+    ],
+    "nuget": {
+        "registryUrls": [
+            "https://nuget.pkg.github.com/habx/index.json",
+            "https://api.nuget.org/v3/index.json"
+        ]
+    },
+    "hostRules": [
+        {
+            "hostType": "nuget",
+            "matchHost": "https://nuget.pkg.github.com/habx/",
+            "username": "habxtech",
+            "encrypted": {
+                "password": "z67+lcm56t1A4X4ehHuiklgwp6WpMVLbZvAqpppv9TuobJCoDhCixISmHYc6dXwqRIv4C2fWJ5OpcsXNIIj2h+AFG04KWTjuhiwr25GbBWkWANMXzR/xYSRFhSHxeRoZEcDeCclghb/v3Va3U67zIU02hUivMCu2wZK09f4RVLBOcSsZl9bTw7uKiXWO86zAIZxzCkNJ9H10zGwzbXxHN1MLnpENDp4hMmRWBjoplO3rH6s8is1PdSOGR08Ik30fVCEXgPtboxZkV/gNmiSvcGrgGEYDOf0L91c+JnMfFh3jv/BGwrJqN8Rb8ICvpZTweuaMoC23WVFmLcOSURcmRA=="
+            }
+        }
+    ],
+    "packageRules": [
+        {
+            "matchManagers": [
+                "nuget"
+            ],
+            "addLabels": [
+                "renovate:dotnet"
+            ]
+        },
+        {
+            "matchUpdateTypes": [
+                "minor",
+                "patch"
+            ],
+            "matchManagers": [
+                "nuget"
+            ],
+            "addLabels": [
+                "automerge-noupdate"
+            ]
+        },
+        {
+            "matchManagers": [
+                "nuget"
+            ],
+            "matchPackagePatterns": [
+                "^github.com/habx/" // <-- FIX THIS
+            ],
+            "addLabels": [
+                "automerge-noupdate"
+            ],
+            "prPriority": 5
+        }
+    ]
+}
