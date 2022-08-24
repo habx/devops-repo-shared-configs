@@ -6,5 +6,5 @@ branches:
   - name: dev
     protection:
       required_status_checks:
-        contexts: 
+        contexts:
           - "deploy-to-dev"
