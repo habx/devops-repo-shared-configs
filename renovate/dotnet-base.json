@@ -55,6 +55,12 @@
                 "automerge-noupdate"
             ],
             "prPriority": 5
+        },
+        {
+            "matchPackageNames": [
+                "Microsoft.Extensions.Logging"
+            ],
+            "allowedVersions": "<6"
         }
     ]
 }
