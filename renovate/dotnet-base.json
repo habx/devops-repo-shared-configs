@@ -33,12 +33,12 @@
             ]
         },
         {
+            "matchManagers": [
+                "nuget"
+            ],
             "matchUpdateTypes": [
                 "minor",
                 "patch"
-            ],
-            "matchManagers": [
-                "nuget"
             ],
             "addLabels": [
                 "automerge-noupdate"
@@ -49,7 +49,7 @@
                 "nuget"
             ],
             "matchPackagePatterns": [
-                "^github.com/habx/" // <-- FIX THIS
+                "^Habx."
             ],
             "addLabels": [
                 "automerge-noupdate"
