@@ -1,6 +1,7 @@
 ---
 # https://probot.github.io/docs/best-practices/#store-configuration-in-the-repository
-_extends: devops-repo-shared-configs:github-settings/global.yml
+# last_update: 2022-08-23
+_extends: devops-repo-shared-configs:github-settings/dotnet-base.yml
 
 branches:
   - name: dev
