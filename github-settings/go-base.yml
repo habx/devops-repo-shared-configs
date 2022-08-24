@@ -1,6 +1,6 @@
 ---
 # https://probot.github.io/docs/best-practices/#store-configuration-in-the-repository
-# last_update: 2022-08-23
+# last_update: 2022-08-24
 _extends: devops-repo-shared-configs:github-settings/global.yml
 
 labels:
