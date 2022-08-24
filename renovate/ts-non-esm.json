@@ -59,6 +59,10 @@
         {
             "matchPackageNames": [ "node-fetch" ],
             "allowedVersions": "<3"
+        },
+        {
+            "matchPackageNames": [ "form-data-encoder" ],
+            "allowedVersions": "<2"
         }
     ]
 }
