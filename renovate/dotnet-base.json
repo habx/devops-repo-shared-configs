@@ -61,6 +61,18 @@
                 "Microsoft.Extensions.Logging"
             ],
             "allowedVersions": "<6"
+        },
+        {
+            "matchPackageNames": [
+                "Newtonsoft.Json"
+            ],
+            "allowedVersions": "<13"
+        },
+        {
+            "matchPackageNames": [
+                "Autodesk.Revit.SDK"
+            ],
+            "allowedVersions": "<2021"
         }
     ]
 }
