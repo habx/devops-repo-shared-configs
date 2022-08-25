@@ -67,6 +67,12 @@
                 "Newtonsoft.Json"
             ],
             "allowedVersions": "<13"
+        },
+        {
+            "matchPackageNames": [
+                "Autodesk.Revit.SDK"
+            ],
+            "allowedVersions": "<2021"
         }
     ]
 }
