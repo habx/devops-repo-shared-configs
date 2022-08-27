@@ -1,15 +1,14 @@
 ---
 # https://probot.github.io/docs/best-practices/#store-configuration-in-the-repository
-# last_update: 2022-08-23
 _extends: devops-repo-shared-configs:github-settings/global.yml
-
-labels:
-  - name: renovate:dotnet
-    description: Dependency occuring on a dotnet lib/app
-    color: 0366d6
 
 branches:
   - name: dev
     protection:
       required_status_checks:
-        contexts: ["tests"]
+        contexts: ["test", "static-test", "codecov/project", "codecov/patch"]
+
+labels:
+  - name: renovate:python
+    description: Dependency occuring on a python lib/app
+    color: 0366d6

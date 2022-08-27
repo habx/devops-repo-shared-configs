@@ -1,7 +1,7 @@
 ---
 # https://probot.github.io/docs/best-practices/#store-configuration-in-the-repository
-_extends: devops-repo-shared-configs:github-settings/global.yml
-description: '2022-03-30'
+_extends: devops-repo-shared-configs:github-settings/ts-base.yml
+
 branches:
   - name: dev
     protection:
