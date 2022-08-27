@@ -7,3 +7,9 @@ labels:
   - name: renovate:dotnet
     description: Dependency occuring on a dotnet lib/app
     color: 0366d6
+
+branches:
+  - name: dev
+    protection:
+      required_status_checks:
+        contexts: ["tests"]

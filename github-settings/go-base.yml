@@ -7,3 +7,9 @@ labels:
   - name: renovate:golang
     description: Dependency occuring on a golang lib/app
     color: 0366d6
+
+branches:
+  - name: dev
+    protection:
+      required_status_checks:
+        contexts: ["tests"]

@@ -7,3 +7,8 @@ branches:
     protection:
       required_status_checks:
         contexts: ["test", "static-test", "codecov/project", "codecov/patch"]
+
+labels:
+  - name: renovate:python
+    description: Dependency occuring on a python lib/app
+    color: 0366d6
