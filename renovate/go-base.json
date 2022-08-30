@@ -13,6 +13,7 @@
             "matchManagers": [
                 "gomod"
             ],
+            "stabilityDays": 7,
             "addLabels": [
                 "renovate:golang"
             ]
@@ -45,6 +46,7 @@
             "addLabels": [
                 "automerge-noupdate"
             ],
+            "stabilityDays": 0,
             "prPriority": 5
         },
         {
