@@ -57,22 +57,40 @@
             "prPriority": 5
         },
         {
+            "matchManagers": [
+                "nuget"
+            ],
             "matchPackageNames": [
                 "Microsoft.Extensions.Logging"
             ],
             "allowedVersions": "<6"
         },
         {
+            "matchManagers": [
+                "nuget"
+            ],
             "matchPackageNames": [
                 "Newtonsoft.Json"
             ],
             "allowedVersions": "<13"
         },
         {
+            "matchManagers": [
+                "nuget"
+            ],
             "matchPackageNames": [
                 "Autodesk.Revit.SDK"
             ],
             "allowedVersions": "<2021"
+        },
+        {
+            "matchManagers": [
+                "nuget"
+            ],
+            "matchPackagePatterns": [
+                "^GraphQL.Client.*"
+            ],
+            "allowedVersions": "<5"
         }
     ]
 }

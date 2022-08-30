@@ -70,6 +70,9 @@ labels:
   - name: renovate:back
     description: Dependency occuring on a backend app
     color: 0366d6
+  - name: renovate:circleci
+    description: Dependency occuring on a circleci orb
+    color: 0366d6
   - name: security
     description: This PR relates to security
     color: ee0701
