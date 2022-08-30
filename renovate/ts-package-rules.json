@@ -8,7 +8,7 @@
     "ignoreDeps": ["husky", "vite-plugin-checker"],
     "packageRules": [
         {
-            "matchPackageManager": ["npm"],
+            "matchManagers": ["npm"],
             "stabilityDays": 7
         },
         {
