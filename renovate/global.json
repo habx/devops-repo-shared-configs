@@ -13,6 +13,8 @@
     "separateMinorPatch": true,
     "prConcurrentLimit": 10,
     "prHourlyLimit": 2,
+    "prCreation": "not-pending",
+    "internalChecksFilter": "strict",
     "timezone": "Europe/Paris",
     "vulnerabilityAlerts": {
         "addLabels": [
