@@ -16,55 +16,59 @@
             "allowedVersions": "<5"
         },
         {
-            "description": "ttps://github.com/sindresorhus/p-reduce",
+            "description": "https://github.com/sindresorhus/p-reduce",
             "matchPackageNames": [
                 "p-reduce"
             ],
             "allowedVersions": "<3"
         },
         {
-            "description": "ttps://github.com/sindresorhus/p-queue",
+            "description": "https://github.com/sindresorhus/p-queue",
             "matchPackageNames": [
                 "p-queue"
             ],
             "allowedVersions": "<7"
         },
         {
-            "description": "ttps://github.com/sindresorhus/p-filter",
+            "description": "https://github.com/sindresorhus/p-filter",
             "matchPackageNames": [
                 "p-filter"
             ],
             "allowedVersions": "<3"
         },
         {
-            "description": "ttps://github.com/sindresorhus/p-whilst",
+            "description": "https://github.com/sindresorhus/p-whilst",
             "matchPackageNames": [
                 "p-whilst"
             ],
             "allowedVersions": "<3"
         },
         {
-            "description": "ttps://github.com/sindresorhus/got",
+            "description": "https://github.com/sindresorhus/got",
             "matchPackageNames": [
                 "got"
             ],
             "allowedVersions": "<12"
         },
         {
+            "description": "https://github.com/sindresorhus/string-hash",
             "matchPackageNames": [
                 "@sindresorhus/string-hash"
             ],
             "allowedVersions": "<2"
         },
         {
+            "description": "https://github.com/node-fetch/node-fetch",
             "matchPackageNames": [ "node-fetch" ],
             "allowedVersions": "<3"
         },
         {
+            "description": "https://github.com/octet-stream/form-data-encoder",
             "matchPackageNames": [ "form-data-encoder" ],
             "allowedVersions": "<2"
         },
         {
+            "description": "https://www.npmjs.com/package/formdata-node",
             "matchedPackageNames": [ "formdata-node" ],
             "allowedVersions": "<5"
         }
