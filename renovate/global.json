@@ -5,7 +5,8 @@
         ":semanticCommits"
     ],
     "enabledManagers": [
-        "circleci"
+        "circleci",
+        "docker-compose"
     ],
     "dependencyDashboard": true,
     "dependencyDashboardAutoclose": true,

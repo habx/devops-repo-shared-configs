@@ -5,6 +5,7 @@
     ],
     "enabledManagers": [
         "circleci",
+        "docker-compose",
         "dockerfile",
         "gomod"
     ],
