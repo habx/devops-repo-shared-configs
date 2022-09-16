@@ -138,7 +138,8 @@
             "matchPackageNames": [
                 "three",
                 "@types/three",
-                "react-scripts"
+                "react-scripts",
+                "furioos-sdk"
             ],
             "automerge": false,
             "addLabels": ["automerge-disabled"]
