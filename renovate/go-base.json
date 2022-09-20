@@ -51,6 +51,12 @@
             "prPriority": 5
         },
         {
+           "matchPackagePatterns": [
+            "^github.com/aws/"
+           ],
+           "stabilityDays": 2
+        },
+        {
             "matchPackagePatterns": [
                 "^gorm.io/"
             ],
