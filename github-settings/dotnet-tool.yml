@@ -1,0 +1,3 @@
+---
+# https://probot.github.io/docs/best-practices/#store-configuration-in-the-repository
+_extends: devops-repo-shared-configs:github-settings/dotnet-base.yml
