@@ -9,5 +9,3 @@ branches:
       required_status_checks:
         contexts:
           - tests
-          - "codecov/project"
-          - "codecov/patch"
