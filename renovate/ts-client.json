@@ -18,6 +18,12 @@
     ],
     "packageRules": [
         {
+          "matchPackageNames": [
+              "@apollo/client"
+          ],
+          "allowedVersions": "<3.7"
+        },
+        {
             "matchManagers": [
                 "dockerfile"
             ],
