@@ -9,6 +9,9 @@
         "dockerfile",
         "gomod"
     ],
+    "postUpdateOptions": [
+        "gomodUpdateImportPaths"
+    ],
     "packageRules": [
         {
             "matchManagers": [
