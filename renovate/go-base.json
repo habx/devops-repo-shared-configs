@@ -37,10 +37,6 @@
             ]
         },
         {
-            "matchUpdateTypes": [
-                "major",
-                "minor"
-            ],
             "matchManagers": [
                 "gomod"
             ],
