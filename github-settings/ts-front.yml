@@ -6,10 +6,10 @@ _extends: devops-repo-shared-configs:github-settings/ts-base.yml
 labels:
   - name: front
     description: frontend PR
-    color: 0366d6
+    color: 5319e7
   - name: "front:client"
     description: frontend client
-    color: 0366d6
+    color: 5319e7
   - name: "front:lib"
     description: frontend lib
-    color: 0366d6
+    color: 5319e7
