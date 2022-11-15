@@ -1,0 +1,15 @@
+---
+# https://probot.github.io/docs/best-practices/#store-configuration-in-the-repository
+# last_update: 2022-11-15
+_extends: devops-repo-shared-configs:github-settings/ts-base.yml
+
+labels:
+  - name: back
+    description: backend PR
+    color: 0366d6
+  - name: "back:service"
+    description: backend service
+    color: 0366d6
+  - name: "back:lib"
+    description: backend lib
+    color: 0366d6

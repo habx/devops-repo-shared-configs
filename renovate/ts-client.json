@@ -13,9 +13,6 @@
         "husky",
         "vite-plugin-checker"
     ],
-    "addLabels": [
-        "renovate:client"
-    ],
     "packageRules": [
         {
           "matchPackageNames": [

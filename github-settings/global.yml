@@ -61,12 +61,6 @@ labels:
   - name: renovate
     description: This PR updates dependencies
     color: 0366d6
-  - name: renovate:front
-    description: Dependency occuring on a frontent app
-    color: 0366d6
-  - name: renovate:client
-    description: Dependency occuring on a client
-    color: 0366d6
   - name: renovate:back
     description: Dependency occuring on a backend app
     color: 0366d6

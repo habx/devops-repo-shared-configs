@@ -3,8 +3,5 @@
   "extends": [
     "github>habx/devops-repo-shared-configs//renovate/ts-base",
     "github>habx/devops-repo-shared-configs//renovate/ts-package-rules"
-  ],
-  "addLabels": [
-    "renovate:front"
   ]
 }
