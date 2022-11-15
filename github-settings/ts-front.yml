@@ -7,10 +7,9 @@ labels:
   - name: front
     description: frontend PR
     color: 0366d6
-  - name: 'front:client'
+  - name: "front:client"
     description: frontend client
     color: 0366d6
-  - name: 'front:lib'
+  - name: "front:lib"
     description: frontend lib
     color: 0366d6
-  

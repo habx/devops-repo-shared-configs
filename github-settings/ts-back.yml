@@ -7,10 +7,9 @@ labels:
   - name: back
     description: backend PR
     color: 0366d6
-  - name: 'back:service'
+  - name: "back:service"
     description: backend service
     color: 0366d6
-  - name: 'back:lib'
+  - name: "back:lib"
     description: backend lib
     color: 0366d6
-  
