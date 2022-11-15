@@ -1,0 +1,16 @@
+---
+# https://probot.github.io/docs/best-practices/#store-configuration-in-the-repository
+# last_update: 2022-11-15
+_extends: devops-repo-shared-configs:github-settings/ts-base.yml
+
+labels:
+  - name: front
+    description: frontend PR
+    color: 0366d6
+  - name: 'front:client'
+    description: frontend client
+    color: 0366d6
+  - name: 'front:lib'
+    description: frontend lib
+    color: 0366d6
+  
