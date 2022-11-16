@@ -60,6 +60,12 @@
                 "^gorm.io/"
             ],
             "groupName": "gorm changes"
+        },
+        {
+            "matchPackagePatterns": [
+                "^k8s.io/"
+            ],
+            "allowedVersions": "<=0.22"
         }
     ]
 }
