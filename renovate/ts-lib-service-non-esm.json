@@ -1,0 +1,34 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>habx/devops-repo-shared-configs//renovate/ts-back-non-esm",
+    "github>habx/devops-repo-shared-configs//renovate/ts-npmrc-private"
+  ],
+  "packageRules": [
+    {
+      "updateTypes": [
+        "minor",
+        "patch"
+      ],
+      "depTypeList": [
+        "devDependencies"
+      ],
+      "addLabels": [
+        "automerge-noupdate"
+      ]
+    },
+    {
+      "updateTypes": [
+        "minor",
+        "patch"
+      ],
+      "depTypeList": [
+        "dependencies",
+        "peerDependencies"
+      ],
+      "addLabels": [
+        "automerge-noupdate"
+      ]
+    }
+  ]
+}
