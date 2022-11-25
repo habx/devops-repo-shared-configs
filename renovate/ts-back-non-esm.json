@@ -1,8 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>habx/devops-repo-shared-configs//renovate/ts-base",
-    "github>habx/devops-repo-shared-configs//renovate/ts-package-rules",
+    "github>habx/devops-repo-shared-configs//renovate/ts-back",
     "github>habx/devops-repo-shared-configs//renovate/ts-non-esm"
   ],
   "addLabels": [
