@@ -40,7 +40,7 @@ jobs:
 
   update-version:
     docker:
-      - image: cimg/base:2022.11
+      - image: cimg/base:2022.12
     steps:
       - checkout
       - add_ssh_keys
