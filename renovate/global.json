@@ -8,7 +8,7 @@
         "circleci",
         "docker-compose"
     ],
-    "disable": true,
+    "enabled": false,
     "dependencyDashboard": true,
     "dependencyDashboardAutoclose": true,
     "rangeStrategy": "bump",
